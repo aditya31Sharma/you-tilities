@@ -1,0 +1,286 @@
+@font-face {
+    font-family: 'PoppinsLight';
+    src: local('PoppinsLight'),
+         url('./fonts/Poppins-Light.ttf') format('truetype')
+}
+@font-face {
+    font-family: 'PoppinsMedium';
+    src: local('PoppinsMedium'),
+         url('./fonts/Poppins-Medium.ttf') format('truetype')
+}
+@font-face {
+    font-family: 'PoppinsBold';
+    src: local('PoppinsBold'),
+         url('./fonts/Poppins-Bold.ttf') format('truetype')
+}
+  
+  
+/* width */
+::-webkit-scrollbar
+{
+    width: 10px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    background: linear-gradient(49deg,#6fff7b,#7bcaff);
+    border-radius:100px;          
+}
+  
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background:#151517;
+    border-radius:10px;
+      
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover{
+    box-shadow: inset -6px -6px 10px rgba(255,255,255,0.05),
+                inset 6px 6px 20px rgba(0,0,0,0.5);
+}
+  
+@-webkit-keyframes Coolbg {
+    0%{background-position:0% 90%}
+    50%{background-position:100% 11%}
+    100%{background-position:0% 90%}
+}
+@-moz-keyframes Coolbg {
+    0%{background-position:0% 90%}
+    50%{background-position:100% 11%}
+    100%{background-position:0% 90%}
+}
+@keyframes Coolbg {
+    0%{background-position:0% 90%}
+    50%{background-position:100% 11%}
+    100%{background-position:0% 90%}
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes js-logo-move {
+  0%{
+    transform: translate(0%,0%);
+  }
+  25%{
+    transform: translate(-10%,0%);
+  }
+  50%{
+    transform: translate(-10%,10%);
+  }
+  75%{
+    transform: translate(0%,10%)
+  }
+  100%{
+    transform: translate(0%,0%);
+  }
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family:'PoppinsLight',sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    
+}
+a{
+  text-decoration:none;
+}
+
+
+/* #region pebbles */
+.pebble{
+  height:500px;
+  transform:rotate(20deg);
+  width:500px;
+  border-radius:701px 600px 500px;
+  background-image:linear-gradient(90deg,#36D1DC,#5B86E5);
+  position:absolute;
+  background: linear-gradient(49deg,#00ffea,#5fbfff,#6e71ff,#db28ff);
+  background-size: 400% 400%;
+  /* z-index:-99; */
+  -webkit-animation: Coolbg 5s ease infinite;
+  -moz-animation: Coolbg 5s ease infinite;
+  animation: Coolbg 5s ease infinite;
+}
+.top-pebble{
+top:-340px;
+left:-2%;
+}
+/* #endregion */
+
+
+/* #region Hero section */
+.hero{
+  height:100vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0rem 4rem;
+  margin: 0 auto;
+  background-color:#fff;
+}
+.hero-img{
+width: 100%;
+padding-right: 3rem;
+}
+.hero-img img{
+  width:100%;
+}
+.hero-content{
+margin-left: 10rem;
+}
+h1{
+font-family: 'PoppinsBold',sans-serif;
+font-size: 2rem;
+padding:0rem;
+margin:0rem;
+background: linear-gradient(49deg,#00ffea,#5fbfff,#6e71ff,#db28ff);
+  background-size: 400% 400%;
+  background-clip:text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: Coolbg 5s ease infinite;
+  -moz-animation: Coolbg 5s ease infinite;
+  animation: Coolbg 5s ease infinite;
+}
+h1>span{
+font-size:6rem;
+line-height:75px;
+}
+h2{
+font-family: 'PoppinsMedium',sans-serif;
+margin: 2rem auto;
+margin-bottom: 0;
+padding:0rem;
+font-size: 1.5rem;
+color: #0b0b81;
+}
+.hero-content>p{
+font-family: 'PoppinsMedium',sans-serif;
+color: rgb(155, 155, 155);
+}
+/* #endregion */
+
+
+/* #region About Youtilities */
+.about-youtilities{
+height:100vh;
+display:flex;
+justify-content: center;
+align-items: center;
+padding: 0rem 4rem;
+margin: 0 auto;
+background-color: #15202b;
+color: #fff;
+}
+.imgs-article{
+width: 100%;
+padding-right: 3rem;
+margin-top: 10rem;
+/* margin-left: 10rem; */
+}
+#js-logo{
+  z-index: 0;
+  position:relative;
+  width:40%;
+  left:350px;
+  bottom:150px;
+  animation: js-logo-move infinite 5s linear;
+}
+#react-logo{
+width:70%;
+animation: App-logo-spin infinite 5s linear;
+}
+.content-article{
+width: 100%;
+text-align: justify;
+}
+.content-article h1{
+text-align: center;
+font-size:3rem;
+}
+.content-article p{
+font-family: 'PoppinsMedium',sans-serif;
+color: rgb(155, 155, 155);
+font-size:1.5rem;
+}
+.content-article p span{
+background: linear-gradient(49deg,#00ffb3,#6e71ff,#db28ff);
+  /* background-size: 400% 400%; */
+  background-clip:text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* -webkit-animation: Coolbg 5s ease infinite;
+  -moz-animation: Coolbg 5s ease infinite;
+  animation: Coolbg 5s ease infinite; */
+}
+.content-article>p>#open-source{
+  background: #6fff7b;
+  background-clip:text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.content-article>p>#react-js{
+  background:#6fd1ff;
+  background-clip:text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.content-article>p>#es6{
+  background: #fdff6f;
+  background-clip:text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#main-source-code{
+display:inline-flex;
+align-items:center;
+justify-content:center;
+margin:0 auto;
+width:100%;
+}
+#main-source-code img{
+width: 50px;
+}
+#main-source-code span{
+font-family: 'PoppinsMedium',sans-serif;
+padding-left:1rem;
+font-size:1.5rem;
+color:#6fff7b;
+}
+/* #endregion */
+
+
+/* #region Our-utilities */
+.our-utilities{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+.our-utilities h1{
+font-size:7rem;
+}
+/* #endregion */
+
+
+
+
+
+
