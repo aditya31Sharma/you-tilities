@@ -4,30 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="./Vendors/pagePiling.css"> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.css" integrity="sha512-TD/aL30dNLN0VaHVoh9voFlNi7ZuWQYtV4bkIJv2ulZ8mEEkZJ7IyGvDthMKvIUwzLmPONnjQlAi55HTERVXpw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="./index.css">
-    <title>Youtilities</title>
+    <link rel="stylesheet" href="./mediaqueries.css">
+    <title>YOUtilities</title>
 </head>
 <body>
-    <div id="fullPage">
-
-
-    <header class="hero section">
+    <div class="container">
+        
+    <!-- HERO -->
+    <header id="hero" class="section">
         <div class="pebble top-pebble"></div>
         <article class="hero-content">
             <h1>Do more with 
-                <span>Youtilities</span>
+                <span>YOUtilities</span>
             </h1>
             <h2>Several day-to-day utilities made with love just for you.</h2>
             <p>We've got some great utilities to help front-end developers, graphic designers and even the general audience all at one place!</p>
         </article>
         <article class="hero-img">
-            <img src="./img/timesaving.jpg" alt="time-saving">
+            <img src="./img/timesaving-min.jpg" alt="time-saving">
         </article>
     </header>
 
-    <section class="about-youtilities section">
+    <section id="about-youtilities" class="section">
 
             <article class="imgs-article">
                 <img src="img/logo.svg" id="react-logo" alt="logo" />
@@ -36,10 +36,9 @@
             </article>
 
             <article class="content-article">
-                <div class="pebble top-pebble"></div>
-                <h1>About Youtilities</h1>
+                <h1>So what is it really ?</h1>
     
-                <p>Youtilities is a completely 
+                <p>YOUtilities is an 
                     <span id="open-source">
                         <a href="https://g.co/kgs/VuyXfu"  target="_blank">
                             open source
@@ -74,7 +73,7 @@
                 </p>
                 <div id="main-source-code">
                     <img src="./img/gh.png">
-                    <a href="https://github.com/aditya31Sharma/youtilities" target="_blank">
+                    <a href="https://github.com/aditya31Sharma/you-tilities" target="_blank">
                         <span>&lt;Sourcecode&gt;</span>
                     </a>
                 </div>
@@ -82,20 +81,329 @@
         
     </section>
 
-    <section class="our-utilities section">
-        <h1>Our Utilities</h1>
-    </section>    
+    <section id="our-utilities" class="section">
+
+        <div id="title-container">
+            <h1>Our Utilities</h1>
+                <div>
+                    <div class="scroll-down"></div>
+                </div>
+            <div class="custom-shape-divider-bottom-1624941850" id="shadow-div">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M649.97 0L599.91 54.12 550.03 0 0 0 0 120 1200 120 1200 0 649.97 0z" class="shape-fill"></path>
+                </svg>
+            </div>
+        </div>
+
+        <div id="actual-utilities">
+
+            <!-- TINTS N SHADES -->
+            <article class="an-utility white bluebg">
+                
+                <article class="utility-img" data-tilt>
+                    <img src="./img/tints-n-shades.png"
+                         id="tints-n-shades-img"/>
+                </article>
+                
+                <article class="utility-content" >
+                    <h2>
+                         Tints 'n Shades
+                    </h2>
+                    <p>
+                        Better-ipsum is Random text generator web-app that generates dummy text similar to the infamous lorem-ipsum.It's better than regular lorem-ipsum because the text it generates looks a lot realistic to actual english written text and not random latin strings that quite frankly majority do not comprehend.
+                    </p>
+                    <div id="CTA-container">
+
+                        <div id="utility-source-code">
+                            <img src="./img/gh.png">
+                            <a href="https://github.com/aditya31Sharma/tints-n-shades" target="_blank">
+                             <span>&lt;Sourcecode&gt;</span>
+                            </a>
+                        </div>
+
+                        <a id="visit" href="http://tints-n-shades.netlify.app/" target="_blank">
+                            <div id="utility-use">
+                                <img src="./img/use.png" alt="USE">
+                                <span class="white">
+                                    Use Utility
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                </article>
+
+                <div class="custom-shape-divider-bottom-1624948807">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                        <path d="M892.25 114.72L0 0 0 120 1200 120 1200 0 892.25 114.72z" class="shape-fill"></path>
+                    </svg>
+                </div>
+
+            </article> 
 
 
-</div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js" integrity="sha512-gSf3NCgs6wWEdztl1e6vUqtRP884ONnCNzCpomdoQ0xXsk06lrxJsR7jX5yM/qAGkPGsps+4bLV5IEjhOZX+gg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            <!-- BETTER-IPSUM -->
+            <article class="an-utility blue whitebg">
+       
+                <article class="utility-content">
+                    <h2 class="left">
+                        Better-ipsum
+                     </h2>
+                    <p>
+                        Better-ipsum is Random text generator web-app that generates dummy text similar to the infamous lorem-ipsum.It's better than regular lorem-ipsum because the text it generates looks a lot realistic to actual english written text and not random latin strings that quite frankly majority do not comprehend.
+                    </p>
+                    <div id="CTA-container">
+ 
+                        <div id="utility-source-code">
+                            <img src="./img/gh.png">
+                            <a href="https://github.com/aditya31Sharma/better-ipsum" target="_blank">
+                             <span>&lt;Sourcecode&gt;</span>
+                            </a>
+                        </div>
+ 
+                        <a id="visit" href="http://better-ipsum.netlify.app/" target="_blank">
+                            <div id="utility-use">
+                                <img src="./img/use.png" alt="USE">
+                                <span class="white">
+                                    Use Utility
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                </article>
+ 
+                <article class="utility-img utility-img-right" data-tilt>
+                    <img src="./img/better-ipsum-min.png"
+                            id="better-ipsum-img"/>
+                </article>
 
-<script type="text/javascript">
-    new fullpage('#fullPage',{
-    autoScrolling: true,
-    navigation:true
-});
-</script>
+                <div class="custom-shape-divider-bottom-1624948628">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                        <path d="M892.25 114.72L0 0 0 120 1200 120 1200 0 892.25 114.72z" class="shape-fill"></path>
+                    </svg>
+                </div>
+            </article>
+
+
+            <!-- HEAD STORIES -->
+            <article class="an-utility white bluebg">
+                
+                <article class="utility-img" data-tilt>
+                    <img src="./img/headstories-min.png"
+                         id="headstories-img"/>
+                </article>
+                
+                <article class="utility-content" >
+                    <h2>
+                         HeadStories
+                    </h2>
+                    <p>
+                        Better-ipsum is Random text generator web-app that generates dummy text similar to the infamous lorem-ipsum.It's better than regular lorem-ipsum because the text it generates looks a lot realistic to actual english written text and not random latin strings that quite frankly majority do not comprehend.
+                    </p>
+                    <div id="CTA-container">
+
+                        <div id="utility-source-code">
+                            <img src="./img/gh.png">
+                            <a href="https://github.com/aditya31Sharma/headstories" target="_blank">
+                             <span>&lt;Sourcecode&gt;</span>
+                            </a>
+                        </div>
+
+                        <a id="visit" href="http://headstories.netlify.app/" target="_blank">
+                            <div id="utility-use">
+                                <img src="./img/use.png" alt="USE">
+                                <span class="white">
+                                    Use Utility
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                </article>
+
+                <div class="custom-shape-divider-bottom-1624948807">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                        <path d="M892.25 114.72L0 0 0 120 1200 120 1200 0 892.25 114.72z" class="shape-fill"></path>
+                    </svg>
+                </div>
+
+            </article>
+
+
+            <!-- DARK DOODLE -->
+            <article class="an-utility blue whitebg">
+       
+                <article class="utility-content">
+                    <h2 class="left">
+                         Dark Doodle
+                         </a>
+                     </h2>
+                    <p>
+                        Better-ipsum is Random text generator web-app that generates dummy text similar to the infamous lorem-ipsum.It's better than regular lorem-ipsum because the text it generates looks a lot realistic to actual english written text and not random latin strings that quite frankly majority do not comprehend.
+                    </p>
+                    <div id="CTA-container">
+ 
+                        <div id="utility-source-code">
+                            <img src="./img/gh.png">
+                            <a href="https://github.com/aditya31Sharma/darkdoodle" target="_blank">
+                             <span>&lt;Sourcecode&gt;</span>
+                            </a>
+                        </div>
+ 
+                        <a id="visit" href="http://darkdoodle.netlify.app/" target="_blank">
+                            <div id="utility-use">
+                                <img src="./img/use.png" alt="USE">
+                                <span class="white">
+                                    Use Utility
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                </article>
+ 
+                <article class="utility-img utility-img-right" data-tilt>
+                       <img src="./img/dark-doodle.png"
+                            id="dark-doodle-img"/>
+                </article>
+
+                <div class="custom-shape-divider-bottom-1624948628">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                        <path d="M892.25 114.72L0 0 0 120 1200 120 1200 0 892.25 114.72z" class="shape-fill"></path>
+                    </svg>
+                </div>
+
+            </article>
+
+
+            <!-- getPASS -->
+            <article class="an-utility white bluebg">
+                
+                <article class="utility-img" data-tilt>
+                    <img src="./img/getPass.png"
+                         id="getPass-img"/>
+                </article>
+                
+                <article class="utility-content" >
+                    <h2>
+                         getPass
+                    </h2>
+                    <p>
+                        Better-ipsum is Random text generator web-app that generates dummy text similar to the infamous lorem-ipsum.It's better than regular lorem-ipsum because the text it generates looks a lot realistic to actual english written text and not random latin strings that quite frankly majority do not comprehend.
+                    </p>
+                    <div id="CTA-container">
+
+                        <div id="utility-source-code">
+                            <img src="./img/gh.png">
+                            <a href="https://github.com/aditya31Sharma/get-pass" target="_blank">
+                             <span>&lt;Sourcecode&gt;</span>
+                            </a>
+                        </div>
+
+                        <a id="visit" href="http://get-pass.netlify.app/" target="_blank">
+                            <div id="utility-use">
+                                <img src="./img/use.png" alt="USE">
+                                <span class="white">
+                                    Use Utility
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                </article>
+
+                <div class="custom-shape-divider-bottom-1624948807">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                        <path d="M892.25 114.72L0 0 0 120 1200 120 1200 0 892.25 114.72z" class="shape-fill"></path>
+                    </svg>
+                </div>
+
+            </article>
+
+
+            <!-- BRAINEMY -->
+            <article class="an-utility blue whitebg">
+       
+                <article class="utility-content">
+                    <h2 class="left">
+                         Brainemy
+                         </a>
+                     </h2>
+                    <p>
+                        Better-ipsum is Random text generator web-app that generates dummy text similar to the infamous lorem-ipsum.It's better than regular lorem-ipsum because the text it generates looks a lot realistic to actual english written text and not random latin strings that quite frankly majority do not comprehend.
+                    </p>
+                    <div id="CTA-container">
+ 
+                        <div id="utility-source-code">
+                            <img src="./img/gh.png">
+                            <a href="https://github.com/aditya31Sharma/brainemy" target="_blank">
+                             <span>&lt;Sourcecode&gt;</span>
+                            </a>
+                        </div>
+ 
+                        <a id="visit" href="http://brainemy.netlify.app/" target="_blank">
+                            <div id="utility-use">
+                                <img src="./img/use.png" alt="USE">
+                                <span class="white">
+                                    Use Utility
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                </article>
+ 
+                <article class="utility-img utility-img-right" data-tilt>
+                       <img src="./img/brainemy.png"
+                            id="brainemy-img"/>
+                </article>
+
+                <div class="custom-shape-divider-bottom-1624952276">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                        <path d="M649.97 0L550.03 0 599.91 54.12 649.97 0z" class="shape-fill"></path>
+                    </svg>
+                </div>
+
+            </article>
+
+            
+        </div>  
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer id='foot' class="section">
+        <div class="footer-container">
+            
+            <div class="developer-area">
+                <div class="content-div">
+                    <h2>Aditya Sharma</h2>
+                    <h4>YOUtilities | Developer</h4>
+                    <p id='info-p'>
+                        Student at Amity School of Engineering and Technology
+                        <p>Amity University, Noida</p>
+                    </p>
+                </div>
+                <div class="dp-div" data-tilt>
+                    <img src="./img/Me-min.jpg" id="dp">
+                </div>
+            </div>
+
+            <div class="socialmedia-area">
+
+                <a href="https://www.linkedin.com/in/aditya31sharma" target="_blank">
+                <img src="./img/linkedinlogo.png" alt="linkedin">
+                </a>
+                <a href="mailto: aditya311001sharma@gmail.com" target="_blank">
+                <img src="./img/googlelogo.png" alt="gmail">
+                </a>
+                <a href="https://github.com/aditya31Sharma/" target="_blank">
+                <img src="./img/githublogo.png" alt="github">
+                </a>
+
+            </div>
+        </div>
+    </footer>
+
+
+</div>  <!--container-->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js" integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>
 
